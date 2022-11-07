@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+%padding {
+  padding: 0.5em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 1.2em;
+  outline: none;
+}
+
+p {
+  background: #727272;
+  @extend %padding;
+}
+
+thead > tr > td {
+  font-weight: bold;
+  background: #3498db;
+}
+
+#phonebook {
+  @extend %padding;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 0, 255, 1.8827906162464986) 10%,
+    rgba(188, 0, 209, 1.9192051820728291) 24%,
+    rgba(140, 0, 156, 1.8435749299719888) 39%,
+    rgba(87, 2, 97, 1.6867121848739496) 90%
+  );
+}
+
+#phonebook,
+p {
+  margin: 1em;
+  border-radius: 4px;
+}
+
+#search > * {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% / 2 - 0.2em);
+  color: white;
+  background-color: black;
+  border-radius: 12px;
+}
+
+#btn {
+  margin: 1%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1.2px;
+}
+#btn:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+#phonebook__form {
+  width: 100%;
+  @extend %padding;
+  position: absolute;
+  width: 20%;
+  left: 35%;
+  top: 35%;
+  height: 50%;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to left, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to left, #cb00cf, #a300a6, #820385);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 7px 12px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 4px 4px 7px 12px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 4px 7px 12px rgba(251, 0, 255, 1);
+}
+
+#phonebook__result td {
+  font-size: 0.5em;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+}
+
+.hide {
+  display: none;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-left: 95px;
+}
+
+.favorite {
+  order: 1;
+}
+
+.buttonAdd {
+  width: 120px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+#phonebook__result {
+  display: flex;
+}
